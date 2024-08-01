@@ -34,3 +34,31 @@ g++ -std=c++11 -Wall -o test_atm test/test_ATM.cpp Account.o Bank.o ATMControlle
 rm *.o test_atm
 ```
 <br>
+<br>
+
+## Overview
+This is a simple ATM controller implemented in C++. <br>
+The flow of the simple ATM controller: <br>
+Insert Card => PIN number => Select Account => See Balance/ Deposit/ Withdraw <br>
+
+## Code Documentation
+
+### 'Account' Class:
+<br>
+Purpose: Represents a bank account with operations to manage balance.
+<br>
+
+### 'Bank' Class:
+<br>
+Purpose: Simulates a bank. Manage multiple accounts and performs PIN verification.
+<br>
+
+### ATM Controller:
+<br>
+Purpose: Manages ATM operations, like card authentication and transactions.
+<br>
+
+### Test File: 'test_ATM.cpp'
+<br>
+Purpose: Contains test cases to check if the program works as expected.
+<br>
