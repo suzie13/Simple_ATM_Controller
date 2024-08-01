@@ -8,6 +8,10 @@ void testATMController() {
 
     ATMController atm(bank);
 
+    // Test the card insertion and authentication
+    assert(atm.insertCard("123456", "1234") == true);
+    assert(atm.insertCard("123456", "0000") == false);
+
     // Test account selection and operations
     atm.selectAccount("Checking");
     atm.showBalance();
@@ -15,6 +19,10 @@ void testATMController() {
     atm.showBalance();
     atm.withdraw(150);
     atm.showBalance();
+
+    // Test invalid account
+    atm.selectAccount("NonExisting");
+    atm.ejectCard();
 
 }
 
