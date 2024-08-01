@@ -53,7 +53,7 @@ void ATMController::deposit(int amount) {
 
 void ATMController::withdraw(int amount) {
     if (!authenticated || !selectedAccount) {  // Check for authentication and account selection
-        std::cout << "Please authenticate and select an account first." << std::endl;
+        std::cout << "Please authenticate and select an account first!" << std::endl;
         return;
     }
 
