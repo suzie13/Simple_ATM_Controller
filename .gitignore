@@ -1,0 +1,17 @@
+# Ignore object files, temporary files, and build output
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.dll
+*.dylib
+*.log
+
+# Ignore compiled libraries and binaries
+bin/
+lib/
+
+# Ignore Visual Studio files
+.vscode/
+.vs/
